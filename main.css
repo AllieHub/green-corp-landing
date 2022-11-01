@@ -132,6 +132,7 @@ button {
 
 .features__feedback {
     display: flex;
+    align-items: center;
 }
 
 .features__feedback-left {
@@ -149,7 +150,6 @@ button {
 
 .features__feedback-right {
     display: flex;
-    align-items: center;
 }
 
 .features__box {
