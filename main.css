@@ -61,6 +61,13 @@ button {
     background-size: cover;
     padding: 115px 50px;
     overflow: hidden;
+    position: relative;
+}
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 .about h1 {
     font-size: 70px;
