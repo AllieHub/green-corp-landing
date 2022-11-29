@@ -15,7 +15,7 @@
   <header>
     <img class="header__logo" src="img/logo.svg" alt="">
     <div class="header__controls">
-      <a href="#contacts">Контакты</a>
+      <a href="#form">Контакты</a>
       <button>Заказать</button>
     </div>
   </header>
@@ -26,7 +26,7 @@
       <h1>Солнечные панели GreenRobotic</h1>
       <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
       <span></span>
-      <button>Узнать подробнее <i class="fa-solid fa-angle-right"></i></button>
+      <button class="more-button" href ="#features">Узнать подробнее <i class="fa-solid fa-angle-right"></i></button>
     </div>
     <div class="about__images animate__animated animate__fadeInRight">
       <img src="img/sun.png" alt="" class="about__sun-image">
@@ -34,7 +34,7 @@
     </div>
   </section>
 
-  <section class="features">
+  <section id="features" class="features">
     <div class="cards">
       <div class="card">
         <div class="card__logo logo_yellow"><i class="fa-solid fa-solar-panel"></i></div>
@@ -103,7 +103,7 @@
     </div>
   </section>
 
-  <section class="form">
+  <section id="form" class="form">
     <div class="form__container">
       <h1>Оставьте свои контакты</h1>
       <p>Поможем подобрать модель. <br>
@@ -111,7 +111,7 @@
         Гарантия возврата денег.
       </p>
 
-      <form action="" id="form" method="post">
+      <form action="" id="" method="post">
         <div class="form__group">
           <label for="name">Ваше имя</label>
           <input id="name" type="text" name="name" id="" placeholder="Введите имя" />

@@ -21,8 +21,6 @@ function initIncreaseNumberAnimation() {
   increaseNumberAnimationStep(0, element, 5000);
 }
 
-// initIncreaseNumberAnimation();
-
 // Добавляем поле "Другое" и появляющееся дополнительное поле ввода в секции form с формой "Оставьте свои контакты"
 document
   .querySelector("#budget")
@@ -68,3 +66,19 @@ function updateScroll() {
   }
 }
 window.addEventListener("scroll", updateScroll);
+
+// Добавляем плавную анимацию для переходов по кнопкам и ссылкам
+function addSmoothScroll(link) {
+  link.addEventListener("click", onLinkClick);
+}
+
+function onLinkClick(event) {
+  event.preventDefault();
+  document.querySelector(event.target.getAttribute("href")).scrollIntoView({
+    behavior: "smooth",
+  });
+}
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  addSmoothScroll(link);
+  addSmoothScroll(document.querySelector(".more-button"));
+});
